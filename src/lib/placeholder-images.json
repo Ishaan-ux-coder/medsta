@@ -1,0 +1,31 @@
+{
+   "banners": [
+      "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1576091160550-2187d80aeff2?w=800&auto=format&fit=crop&q=60"
+   ],
+   "tickets": [
+      "https://placehold.co/200x100/ecfccb/14b8a6?text=First+Consult+Free",
+      "https://placehold.co/200x100/dbeafe/1e40af?text=Lab+Tests+50%25+Off",
+      "https://placehold.co/200x100/fee2e2/991b1b?text=Vitamin+Supplements"
+   ],
+   "doctors": [
+      "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&auto=format&fit=crop&q=60"
+   ],
+   "medicines": [
+      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1585435557343-3b092031a831?w=400&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400&auto=format&fit=crop&q=60"
+   ],
+   "tests": [
+      "https://placehold.co/100x100/e0e7ff/3730a3?text=Blood+Test",
+      "https://placehold.co/100x100/fef3c7/92400e?text=Thyroid",
+      "https://placehold.co/100x100/dcfce7/166534?text=Diabetes"
+   ],
+   "user": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=200&auto=format&fit=crop&q=60",
+   "app_cta": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&auto=format&fit=crop&q=60"
+}
