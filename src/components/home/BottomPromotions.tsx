@@ -5,15 +5,15 @@ import { Button } from "@/components/ui/button";
 
 export function BottomPromotions() {
     return (
-        <div className="w-full max-w-[1400px] mx-auto px-4 my-8">
+        <div className="w-full max-w-5xl mx-auto px-4 my-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                 {/* Banner 1: App Download / Bachat */}
-                <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-50 to-blue-100 p-6 md:p-8 flex items-center justify-between shadow-sm border border-blue-100">
+                <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-50 to-blue-100 p-4 md:p-8 flex items-center justify-between shadow-sm border border-blue-100">
                     <div className="z-10 max-w-[60%] space-y-3">
                         <div className="relative">
                             <Sparkles className="absolute -top-4 -left-4 text-yellow-400 h-6 w-6 animate-pulse" />
-                            <h3 className="text-2xl md:text-3xl font-extrabold text-gray-900 leading-tight">
+                            <h3 className="text-xl md:text-3xl font-extrabold text-gray-900 leading-tight">
                                 <span className="text-red-500 transform -rotate-6 inline-block text-sm md:text-lg absolute -top-5 left-0">Extra</span>
                                 Same Bachat,<br />
                                 Sirf <span className="text-green-600">App</span> Par!
@@ -39,11 +39,11 @@ export function BottomPromotions() {
                 </div>
 
                 {/* Banner 2: Lowest Price Guarantee */}
-                <div className="relative overflow-hidden rounded-2xl bg-blue-600 p-6 md:p-8 flex flex-col justify-center text-white shadow-md">
+                <div className="relative overflow-hidden rounded-2xl bg-blue-600 p-4 md:p-8 flex flex-col justify-center text-white shadow-md">
                     <div className="relative z-10 w-full">
                         <div className="flex justify-between items-start">
                             <div>
-                                <h3 className="text-2xl md:text-3xl font-extrabold italic uppercase tracking-wider mb-2">
+                                <h3 className="text-xl md:text-3xl font-extrabold italic uppercase tracking-wider mb-2">
                                     Lowest Price<br />Guaranteed
                                 </h3>
                                 <p className="text-blue-100 text-xs md:text-sm max-w-[80%] mb-4">

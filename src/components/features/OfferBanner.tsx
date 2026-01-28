@@ -53,7 +53,7 @@ export function OfferBanner() {
             <CarouselContent className="-ml-0">
                {BANNERS.map((banner) => (
                   <CarouselItem key={banner.id} className="pl-0">
-                     <div className="relative aspect-[2/1] md:aspect-[2.5/1]">
+                     <div className="relative aspect-[4/5] md:aspect-[2.5/1]">
                         {/* Background Image */}
                         <div
                            className="absolute inset-0 bg-cover bg-center transition-transform duration-700 hover:scale-105"
@@ -63,9 +63,9 @@ export function OfferBanner() {
                         <div className={`absolute inset-0 ${banner.overlayColor}`} />
 
                         {/* Content */}
-                        <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12 text-white">
+                        <div className="absolute inset-0 flex flex-col justify-end p-5 md:p-12 text-white">
                            <div className="max-w-2xl space-y-4">
-                              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight drop-shadow-md">
+                              <h2 className="text-xl md:text-3xl lg:text-4xl font-bold leading-tight drop-shadow-md">
                                  {banner.title}
                               </h2>
                               <p className="text-sm md:text-lg text-white/95 font-medium drop-shadow-sm max-w-lg">

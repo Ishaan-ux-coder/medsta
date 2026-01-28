@@ -4,10 +4,10 @@ import { Phone, FileText } from "lucide-react";
 
 export function QuickActionCards() {
   return (
-    <div className="w-full max-w-[1400px] mx-auto px-4 mt-6">
+    <div className="w-full max-w-2xl mx-auto px-4 mt-4 md:mt-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Call to Order Card */}
-        <div className="bg-blue-50/80 border border-blue-100 rounded-xl p-6 flex items-center gap-4 hover:shadow-md transition-shadow cursor-pointer group">
+        <div className="bg-blue-50/80 border border-blue-100 rounded-xl p-4 md:p-6 flex items-center gap-4 hover:shadow-md transition-shadow cursor-pointer group">
           <div className="bg-white p-3 rounded-full shadow-sm group-hover:scale-110 transition-transform">
             <Phone className="h-6 w-6 text-red-500 fill-current" />
           </div>
@@ -20,7 +20,7 @@ export function QuickActionCards() {
         </div>
 
         {/* Upload Prescription Card */}
-        <div className="bg-blue-50/80 border border-blue-100 rounded-xl p-6 flex items-center gap-4 hover:shadow-md transition-shadow cursor-pointer group">
+        <div className="bg-blue-50/80 border border-blue-100 rounded-xl p-4 md:p-6 flex items-center gap-4 hover:shadow-md transition-shadow cursor-pointer group">
           <div className="bg-white p-3 rounded-full shadow-sm group-hover:scale-110 transition-transform">
             <FileText className="h-6 w-6 text-gray-600" />
           </div>

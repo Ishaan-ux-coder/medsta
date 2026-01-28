@@ -34,9 +34,7 @@ export function AppCTA() {
                   <span>Chat on WhatsApp</span>
                </Button>
             </Link>
-            <p className="text-sm text-gray-500 font-medium tracking-wide">
-               Direct Support: <a href="tel:8354070437" className="hover:text-green-600 transition-colors">+91 8354070437</a>
-            </p>
+
          </div>
       </div>
    );

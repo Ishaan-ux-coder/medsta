@@ -17,7 +17,7 @@ export function ServiceGrid() {
             {CATEGORIES.map((cat, index) => (
                <Link key={index} href={cat.href} className="group flex flex-col items-center gap-3">
                   <div className="w-full aspect-square bg-[#E8F5F6] rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:bg-[#dbeceb] group-hover:shadow-md">
-                     <cat.icon className="h-10 w-10 md:h-12 md:w-12 text-[#14b8a6] stroke-[1.5]" />
+                     <cat.icon className="h-8 w-8 md:h-12 md:w-12 text-[#14b8a6] stroke-[1.5]" />
                   </div>
                   <span className="font-semibold text-[#576b70] text-sm md:text-base">{cat.name}</span>
                </Link>
