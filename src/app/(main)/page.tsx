@@ -6,6 +6,9 @@ import { OfferTickets } from "@/components/features/OfferTickets";
 import { OfferBanner } from "@/components/features/OfferBanner";
 import { ServiceGrid } from "@/components/features/ServiceGrid";
 import { PromotedBanners } from "@/components/promotions/PromotedBanners";
+import { QuickActionCards } from "@/components/home/QuickActionCards";
+import { BottomPromotions } from "@/components/home/BottomPromotions";
+import { ShopByCategory } from "@/components/home/ShopByCategory";
 
 import { TrustStrip } from "@/components/features/TrustStrip";
 import { AppCTA } from "@/components/features/AppCTA";
@@ -65,9 +68,9 @@ export default function HomePage() {
             {/* 1. Hero Section (Controlled Inputs) */}
             <HeroSection searchQuery={searchQuery} onSearchChange={handleSearch} />
 
-            <div className="container mx-auto px-4">
-                <PromotedBanners targetPage="home" />
-            </div>
+            <QuickActionCards />
+
+
 
             {/* CONDITIONAL CONTENT: SEARCH RESULTS vs DEFAULT HOME */}
             {searchQuery ? (
@@ -97,11 +100,16 @@ export default function HomePage() {
                         <OfferBanner />
                     </div>
 
-                    {/* 3. Offer Cards */}
-                    <OfferTickets />
+                    {/* 3. Offer Cards - REMOVED */}
+
+                    <BottomPromotions />
 
                     {/* 4. Categories */}
                     <ServiceGrid />
+
+                    <div className="container mx-auto px-4 mb-8">
+                        <PromotedBanners targetPage="home" />
+                    </div>
 
                     {/* 5. Popular Services (Top Doctors) */}
                     <section className="py-8 w-full max-w-[1400px] mx-auto">
@@ -129,6 +137,8 @@ export default function HomePage() {
                             <ScrollBar orientation="horizontal" className="hidden" />
                         </ScrollArea>
                     </section>
+
+
 
                     {/* 5. Popular Diagnostic Tests */}
                     <section className="py-8 w-full max-w-[1400px] mx-auto bg-white">
@@ -177,7 +187,10 @@ export default function HomePage() {
                         </ScrollArea>
                     </section>
 
-                    {/* 7. Trust Strip */}
+                    {/* 7. Shop By Category */}
+                    <ShopByCategory />
+
+                    {/* 8. Trust Strip */}
                     <TrustStrip />
 
                     {/* 8. App Download */}

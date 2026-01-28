@@ -1,9 +1,15 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { ShoppingCart, MapPin, LogIn, Store } from 'lucide-react'; // Store icon for 'M' logo substitute if needed
 import { Button } from '@/components/ui/button';
 
+import { useCart } from "@/context/CartContext";
+
 export function Header() {
+  const { totalItems } = useCart();
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-14 items-center justify-between px-4">
@@ -28,8 +34,13 @@ export function Header() {
           </div>
 
           {/* Cart */}
-          <Button size="icon" variant="ghost" className="text-foreground hover:bg-secondary">
+          <Button size="icon" variant="ghost" className="text-foreground hover:bg-secondary relative">
             <ShoppingCart className="h-5 w-5" />
+            {totalItems > 0 && (
+              <span className="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-red-600 text-[10px] font-bold text-white shadow-sm animate-in zoom-in">
+                {totalItems}
+              </span>
+            )}
           </Button>
 
           {/* Login Button */}
